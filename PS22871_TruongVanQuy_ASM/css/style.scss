@@ -1,0 +1,138 @@
+$color:blue;
+$color2:#0de1e9;
+body{
+    background: #fff;
+    font-size: 14px;
+
+}
+img{
+    max-width: 100%;
+
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header{
+    .top-header{
+        background: #ededed;
+        font-size: 14px;
+        color: $color;
+        p{
+            margin-bottom: 0;
+            line-height: 35px;
+            font-size: 13px;
+        }
+        .social{
+            a{
+                i{
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    border-radius: 50%;
+                    border: 1px solid $color;
+                }
+            }
+        }
+
+    }
+}
+.main-header{
+    padding: 15px 0;
+}
+.menu-header{
+    background-color: $color2;
+    ul{
+        li{
+            display: inline-block;
+            transition: all .3s;
+            position: relative;
+            ul{
+                position: absolute;
+                width: 150px;
+                background: #333;
+                left: 0;
+                top: 80px;
+                text-align: left;
+                opacity: 0;
+                visibility: hidden;
+                transform: all .3s;
+                z-index: 99;
+                li{
+                    display: block;
+
+                    a{
+                        display: block;
+                        text-transform: inherit;
+                        padding: 5px;
+                        border-bottom: dashed 1px #fff;
+                    }
+                }
+            }
+            a{
+                display: inline-block;
+                padding: 10px 30px;
+                text-transform: uppercase;
+                color: #333;
+            }
+            &.active{
+                a{
+                    background: #333;
+                }
+            }
+            &:hover{
+                    transition: all .3s;
+                    a{
+                        background: #fff;
+                    }
+                    ul{
+                        opacity: 1;
+                        visibility: visible;
+                        top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+footer{
+    background-color: #707070;
+    font-size: 15px;
+    
+    .social{
+        a{
+            i{
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                
+            }
+        }
+    }
+    .dmsp{
+        ul{
+        a{
+            i{
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 50%;
+                border: 1px solid #333;
+                color: #fff;
+            }
+        }
+    }
+}
+}
